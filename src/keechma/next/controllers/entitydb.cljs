@@ -1,8 +1,8 @@
 (ns keechma.next.controllers.entitydb
   (:require [keechma.entitydb.core :as edb]
-            [keechma.next.controllers.entitydb.protocols :as pt]
-            [keechma.next.protocols :as keechma-pt]
             [keechma.entitydb.query :as q]
+            [keechma.next.protocols :as keechma-pt]
+            [keechma.next.controllers.entitydb.protocols :as pt]
             [keechma.next.controllers.entitydb.controller]))
 
 (derive :keechma/entitydb :keechma/controller)

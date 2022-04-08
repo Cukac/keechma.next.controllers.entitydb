@@ -1,9 +1,9 @@
 (ns keechma.next.controllers.entitydb.controller
-  (:require [keechma.entitydb.core :as edb]
-            [keechma.next.controllers.entitydb.protocols :refer [IEntityDbApi]]
-            [keechma.next.controller :as ctrl]
+  (:require [goog.object :as gobj]
             [cljs.core.async :refer [<! timeout chan alts! close!]]
-            [goog.object :as gobj])
+            [keechma.entitydb.core :as edb]
+            [keechma.next.controller :as ctrl]
+            [keechma.next.controllers.entitydb.protocols :refer [IEntityDbApi]])
   (:require-macros [cljs.core.async.macros :refer [go-loop]]))
 
 
